@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+<LinearLayout
+        android:id="@+id/layoutOne"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+    <Button
+            android:id="@+id/btnRotate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startAnimation"
+            android:layout_weight="1"
+            android:text="Rotate" />
+
+    <Button
+            android:id="@+id/btnBlink"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startAnimation"
+            android:layout_weight="1"
+            android:text="Blink" >
+    </Button>
+
+    <Button
+            android:id="@+id/btnFadeIn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startAnimation"
+            android:layout_weight="1"
+            android:text="Fade In" />
+
+
+</LinearLayout>
+
+<LinearLayout
+            android:id="@+id/layoutTwo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutOne"
+            android:orientation="horizontal">
+    <Button
+            android:id="@+id/btnMove"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startAnimation"
+            android:layout_weight="1"
+            android:text="Move" />
+    <Button
+            android:id="@+id/btnSequential"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startAnimation"
+            android:layout_weight="1"
+            android:text="Sequential" />
+    <Button
+            android:id="@+id/btnSlide"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startAnimation"
+            android:layout_weight="1"
+            android:text="Slide" />
+</LinearLayout>
+
+<ImageView
+        android:id="@+id/imageAnimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/folder" />
+
+<TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageAnimation"
+        android:layout_alignRight="@+id/imageAnimation"
+        android:layout_marginBottom="30dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
