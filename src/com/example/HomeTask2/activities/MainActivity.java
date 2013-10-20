@@ -17,6 +17,7 @@ import com.example.HomeTask2.R;
 import com.example.HomeTask2.fragments.Fragment1;
 import com.example.HomeTask2.fragments.Fragment2;
 import com.example.HomeTask2.fragments.FragmentListView;
+import com.example.HomeTask2.fragments.FragmentListView2;
 
 
 public class MainActivity extends ActionBarActivity implements ActionBar.OnNavigationListener {
@@ -28,6 +29,8 @@ public class MainActivity extends ActionBarActivity implements ActionBar.OnNavig
     private ListView mDrawerList;
 
     FragmentListView fragmentListView;
+    FragmentListView2 fragmentListView2;
+
     Fragment fragment1;
     Fragment fragment2;
     FragmentTransaction fTrans;
@@ -42,6 +45,8 @@ public class MainActivity extends ActionBarActivity implements ActionBar.OnNavig
        setContentView(R.layout.navigationdraw);
 
         fragmentListView = new FragmentListView();
+        fragmentListView2 = new FragmentListView2();
+
         fragment1 = new Fragment1();
         fragment2 = new Fragment2();
 
@@ -69,7 +74,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.OnNavig
     }
 
     private void initNavigDraw() {
-        mTitles = new String[]{"Фрагмент 1", "Фрагмент 2", "ListView", "Анимация"};
+        mTitles = new String[]{"Фрагмент 1", "Фрагмент 2", "ListView", "ListView2", "Анимация"};
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
 
@@ -104,6 +109,11 @@ public class MainActivity extends ActionBarActivity implements ActionBar.OnNavig
                 mDrawerLayout.closeDrawer(mDrawerList);
                 break;
             case 3:
+                fTrans.replace(R.id.content_frame, fragmentListView2).commit();
+                mDrawerList.setItemChecked(position, true);
+                mDrawerLayout.closeDrawer(mDrawerList);
+                break;
+            case 4:
                 Intent intent = new Intent();
                 intent.setClass(this, AnimationActivity.class);
                 startActivity(intent);

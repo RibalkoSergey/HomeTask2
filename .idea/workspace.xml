@@ -27,7 +27,7 @@
     <ignored path="HomeTask2.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/MyActivity.java" changelist="a7165aa8-a187-4656-8165-e02939766228" time="1382219648976" ignored="false" />
-    <file path="/Dummy.txt" changelist="a7165aa8-a187-4656-8165-e02939766228" time="1382272713744" ignored="false" />
+    <file path="/Dummy.txt" changelist="a7165aa8-a187-4656-8165-e02939766228" time="1382306673857" ignored="false" />
     <file path="/menu.xml" changelist="a7165aa8-a187-4656-8165-e02939766228" time="1382213122850" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="a7165aa8-a187-4656-8165-e02939766228" time="1382274778566" ignored="false" />
     <file path="/styles.xml" changelist="a7165aa8-a187-4656-8165-e02939766228" time="1381955396074" ignored="false" />
@@ -74,6 +74,8 @@
     <file path="/MainActivity.java" changelist="a7165aa8-a187-4656-8165-e02939766228" time="1382285818108" ignored="false" />
     <file path="/Animations.java" changelist="a7165aa8-a187-4656-8165-e02939766228" time="1382280436772" ignored="false" />
     <file path="/fragment_list_view.xml" changelist="a7165aa8-a187-4656-8165-e02939766228" time="1382284788203" ignored="false" />
+    <file path="/ExpandableListAdapter.java" changelist="a7165aa8-a187-4656-8165-e02939766228" time="1382306857654" ignored="false" />
+    <file path="/FragmentListView2.java" changelist="a7165aa8-a187-4656-8165-e02939766228" time="1382308902567" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +90,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -124,7 +127,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -134,52 +136,69 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="menu.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/menu/menu.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="-2.72">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="fragment_list_view.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/fragment_list_view.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state line="14" column="25" selection-start="512" selection-end="512" vertical-scroll-proportion="-4.76">
               <folding />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_list_view2.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/fragment_list_view2.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment2.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/fragment2.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="14" column="4" selection-start="478" selection-end="478" vertical-scroll-proportion="-4.76">
               <folding />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list_group.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/list_group.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="337" selection-end="337" vertical-scroll-proportion="-2.38">
+              <folding />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fragment1.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="list_item.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/layout/list_item.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="0" selection-start="112" selection-end="112" vertical-scroll-proportion="0.05610561">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExpandableListAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/HomeTask2/adapters/ExpandableListAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="97" column="10" selection-start="3216" selection-end="3216" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fragment1.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/HomeTask2/fragments/Fragment1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="12" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.7222222">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActivityEvent.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/HomeTask2/ActivityEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
+            <state line="48" column="12" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -188,57 +207,44 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/HomeTask2/activities/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="0" selection-start="4044" selection-end="4044" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1800#1808#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Fragment2.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/HomeTask2/fragments/Fragment2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment1.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/fragment1.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="45" column="8" selection-start="1455" selection-end="1455" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
         </entry>
       </file>
-      <file leaf-file-name="client_item.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/client_item.xml">
+      <file leaf-file-name="FragmentListView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/HomeTask2/fragments/FragmentListView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="36" selection-start="495" selection-end="495" vertical-scroll-proportion="-1.04">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientListAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/HomeTask2/adapters/ClientListAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="66" selection-start="1606" selection-end="1606" vertical-scroll-proportion="0.0">
+            <state line="29" column="53" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FragmentListView2.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/HomeTask2/fragments/FragmentListView2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="88" column="0" selection-start="3250" selection-end="3250" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2008#2016#0" expanded="true" />
+                <element signature="e#2291#2299#0" expanded="true" />
+                <element signature="e#2571#2579#0" expanded="true" />
+                <element signature="e#2887#2895#0" expanded="true" />
+                <element signature="e#3146#3154#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/HomeTask2/DataHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="13" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -253,22 +259,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/anim/slide_down.xml" />
-        <option value="$PROJECT_DIR$/res/anim/sequential.xml" />
-        <option value="$PROJECT_DIR$/src/Animations.java" />
-        <option value="$PROJECT_DIR$/src/com/example/HomeTask2/Animations.java" />
-        <option value="$PROJECT_DIR$/res/layout/animation.xml" />
         <option value="$PROJECT_DIR$/src/com/example/HomeTask2/activities/AnimationActivity.java" />
         <option value="$PROJECT_DIR$/res/anim/rotate.xml" />
         <option value="$PROJECT_DIR$/res/menu/menu.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/HomeTask2/fragments/FragmentListView.java" />
         <option value="$PROJECT_DIR$/src/com/example/HomeTask2/adapters/ClientListAdapter.java" />
         <option value="$PROJECT_DIR$/res/layout/client_item.xml" />
         <option value="$PROJECT_DIR$/res/layout/fragment_list_view.xml" />
         <option value="$PROJECT_DIR$/src/com/example/HomeTask2/fragments/Fragment2.java" />
         <option value="$PROJECT_DIR$/src/com/example/HomeTask2/ActivityEvent.java" />
-        <option value="$PROJECT_DIR$/src/com/example/HomeTask2/activities/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/HomeTask2/fragments/Fragment1.java" />
+        <option value="$PROJECT_DIR$/src/com/example/HomeTask2/activities/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/example/HomeTask2/fragments/FragmentListView.java" />
+        <option value="$PROJECT_DIR$/res/layout/fragment_list_view2.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/HomeTask2/adapters/ExpandableListAdapter.java" />
+        <option value="$PROJECT_DIR$/res/layout/list_item.xml" />
+        <option value="$PROJECT_DIR$/res/layout/list_group.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/HomeTask2/fragments/FragmentListView2.java" />
       </list>
     </option>
   </component>
@@ -326,7 +332,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -517,6 +522,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -535,11 +541,11 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -607,19 +613,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -646,6 +639,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -784,11 +790,11 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28431374" sideWeight="0.73587084" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28431374" sideWeight="0.810842" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2641292" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18915802" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -802,7 +808,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1872705" sideWeight="0.73587084" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1875" sideWeight="0.810842" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298731" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -878,42 +884,86 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/layout/animation.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="45" selection-start="1940" selection-end="1940" vertical-scroll-proportion="-18.7">
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/res/layout/client_item.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://C:/sdk/sources/android-14/android/view/View.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12855" column="16" selection-start="480133" selection-end="480133" vertical-scroll-proportion="0.33224222">
+        <state line="10" column="36" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/anim/rotate.xml">
+    <entry file="file://$PROJECT_DIR$/res/menu/menu.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="6" selection-start="438" selection-end="438" vertical-scroll-proportion="-7.48">
+        <state line="4" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/HomeTask2/activities/AnimationActivity.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/fragment1.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="16" selection-start="1806" selection-end="1806" vertical-scroll-proportion="1.3895254">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/fragment2.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/HomeTask2/ActivityEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/HomeTask2/fragments/Fragment2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/HomeTask2/fragments/Fragment1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="12" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/fragment_list_view.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="25" selection-start="512" selection-end="512" vertical-scroll-proportion="-4.76">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/HomeTask2/adapters/ExpandableListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="10" selection-start="3216" selection-end="3216" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/sdk/extras/android/support/v7/appcompat/libs/android-support-v7-appcompat.jar!/android/support/v7/app/ActionBar.class">
+    <entry file="file://$PROJECT_DIR$/src/com/example/HomeTask2/activities/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="28" selection-start="272" selection-end="272" vertical-scroll-proportion="-4.76">
+        <state line="45" column="8" selection-start="1455" selection-end="1455" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -927,91 +977,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/HomeTask2/adapters/ClientListAdapter.java">
+    <entry file="file://$PROJECT_DIR$/src/com/example/HomeTask2/DataHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="66" selection-start="1606" selection-end="1606" vertical-scroll-proportion="0.0">
+        <state line="15" column="13" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/HomeTask2/fragments/FragmentListView2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="0" selection-start="3250" selection-end="3250" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2008#2016#0" expanded="true" />
+            <element signature="e#2291#2299#0" expanded="true" />
+            <element signature="e#2571#2579#0" expanded="true" />
+            <element signature="e#2887#2895#0" expanded="true" />
+            <element signature="e#3146#3154#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/client_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="36" selection-start="495" selection-end="495" vertical-scroll-proportion="-1.04">
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/res/layout/fragment_list_view2.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/menu/menu.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="-2.72">
+        <state line="14" column="4" selection-start="478" selection-end="478" vertical-scroll-proportion="-4.76">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/fragment_list_view.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="25" selection-start="512" selection-end="512" vertical-scroll-proportion="-4.76">
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/res/layout/list_group.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/fragment1.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="7" column="0" selection-start="337" selection-end="337" vertical-scroll-proportion="-2.38">
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/list_item.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/fragment2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/HomeTask2/ActivityEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/HomeTask2/activities/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="0" selection-start="4044" selection-end="4044" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1800#1808#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/HomeTask2/fragments/Fragment2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/HomeTask2/fragments/Fragment1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="12" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.7222222">
+        <state line="2" column="0" selection-start="112" selection-end="112" vertical-scroll-proportion="0.05610561">
           <folding />
         </state>
       </provider>
