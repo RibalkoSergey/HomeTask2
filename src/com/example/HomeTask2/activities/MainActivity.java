@@ -1,6 +1,7 @@
 package com.example.HomeTask2.activities;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 
@@ -10,6 +11,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.*;
 import com.example.HomeTask2.ActivityEvent;
@@ -27,6 +29,9 @@ public class MainActivity extends ActionBarActivity implements ActionBar.OnNavig
     private String[] mTitles;
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
+    private ActionBarDrawerToggle mDrawerToggle;
+    private CharSequence title;
+
 
     FragmentListView fragmentListView;
     FragmentListView2 fragmentListView2;
@@ -36,8 +41,6 @@ public class MainActivity extends ActionBarActivity implements ActionBar.OnNavig
     FragmentTransaction fTrans;
 
 
-    private ActionBarDrawerToggle mDrawerToggle;
-    private CharSequence title;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -81,7 +84,42 @@ public class MainActivity extends ActionBarActivity implements ActionBar.OnNavig
         mDrawerList.setAdapter(new ArrayAdapter<String>(this,
                 R.layout.drawer_item, mTitles));
         mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
+
+        mDrawerToggle = new ActionBarDrawerToggle(this,
+                mDrawerLayout,
+                R.drawable.ic_drawer,
+                R.string.drawer_open,
+                R.string.drawer_close ) {
+
+            public void onDrawerClosed(View view) {
+                //getSupportActionBar().setTitle("Closed Drawer");
+            }
+
+            public void onDrawerOpened(View drawerView) {
+                //getSupportActionBar().setTitle("Open Drawer");
+            }
+        };
+
+        mDrawerLayout.setDrawerListener(mDrawerToggle);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
     }
+
+
+    @Override
+    protected void onPostCreate(Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        // Sync the toggle state after onRestoreInstanceState has occurred.
+        mDrawerToggle.syncState();
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        mDrawerToggle.onConfigurationChanged(newConfig);
+    }
+
 
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
         @Override
@@ -95,21 +133,25 @@ public class MainActivity extends ActionBarActivity implements ActionBar.OnNavig
         switch (position) {
             case 0:
                 fTrans.replace(R.id.content_frame, fragment1).commit();
+                getSupportActionBar().setTitle("fragment1");
                 mDrawerList.setItemChecked(position, true);
                 mDrawerLayout.closeDrawer(mDrawerList);
                 break;
             case 1:
                 fTrans.replace(R.id.content_frame, fragment2).commit();
+                getSupportActionBar().setTitle("fragment2");
                 mDrawerList.setItemChecked(position, true);
                 mDrawerLayout.closeDrawer(mDrawerList);
                 break;
             case 2:
                 fTrans.replace(R.id.content_frame, fragmentListView).commit();
+                getSupportActionBar().setTitle("listView1");
                 mDrawerList.setItemChecked(position, true);
                 mDrawerLayout.closeDrawer(mDrawerList);
                 break;
             case 3:
                 fTrans.replace(R.id.content_frame, fragmentListView2).commit();
+                getSupportActionBar().setTitle("listView2");
                 mDrawerList.setItemChecked(position, true);
                 mDrawerLayout.closeDrawer(mDrawerList);
                 break;
@@ -120,4 +162,17 @@ public class MainActivity extends ActionBarActivity implements ActionBar.OnNavig
                 break;
         }
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Pass the event to ActionBarDrawerToggle, if it returns
+        // true, then it has handled the app icon touch event
+        if (mDrawerToggle.onOptionsItemSelected(item)) {
+            return true;
+        }
+        // Handle your other action bar items...
+
+        return super.onOptionsItemSelected(item);
+    }
+
 }
