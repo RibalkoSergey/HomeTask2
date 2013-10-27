@@ -77,7 +77,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.OnNavig
     }
 
     private void initNavigDraw() {
-        mTitles = new String[]{"Фрагмент 1", "Фрагмент 2", "ListView", "ListView2", "Анимация"};
+        mTitles = new String[]{"Фрагмент 1", "Фрагмент 2", "ListView", "ListView2", "Анимация", "Flexible UI"};
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
 
@@ -159,6 +159,11 @@ public class MainActivity extends ActionBarActivity implements ActionBar.OnNavig
                 Intent intent = new Intent();
                 intent.setClass(this, AnimationActivity.class);
                 startActivity(intent);
+                break;
+            case 5:
+                Intent intentFl = new Intent();
+                intentFl.setClass(this, FlexibleActivity.class);
+                startActivity(intentFl);
                 break;
         }
     }
